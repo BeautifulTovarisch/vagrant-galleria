@@ -1,0 +1,18 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "description": "A template node project bundled with esbuild.",
+  "main": "src/main.js",
+  "scripts": {
+    "prebuild": "rm -rf dist",
+    "build": "node esbuild.mjs"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "Anthony",
+  "license": "ISC",
+  "devDependencies": {
+    "esbuild": "^0.19.11"
+  }
+}
