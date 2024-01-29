@@ -23,6 +23,7 @@ To use this repo, install the requisite software and copy the desired template.
 
 - [c](./c)
 - [go](./go)
+- [Lean](./lean)
 - [Node](./node)
 - [Rust](./rust)
 - [OCaml](./ocaml)
