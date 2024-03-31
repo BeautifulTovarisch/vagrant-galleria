@@ -1,0 +1,26 @@
+\documentclass{standalone}
+
+\begin{document}
+
+Will this import???
+
+\begin{tikzpicture}[
+vertex/.style={circle, draw, fill=white, thick, minimum size=20},
+]
+
+% Vertices
+\node[vertex] (S) {$S$};
+\node[vertex] (V) [above right=of S] {$V$};
+\node[vertex] (W) [below right=of S] {$W$};
+\node[vertex] (T) [below right=of V] {$T$};
+
+% Edges
+\draw[->, thick] (S) to node[above] {1} (V);
+\draw[->, thick] (S) to node[below] {4} (W);
+\draw[->, thick] (V) to node[right] {2} (W);
+\draw[->, thick] (V) to node[above] {6} (T);
+\draw[->, thick] (W) to node[below] {3} (T);
+
+\end{tikzpicture}
+
+\end{document}
